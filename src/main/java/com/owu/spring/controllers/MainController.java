@@ -46,7 +46,6 @@ public class MainController {
     public ResponseEntity<List<Car>> carsByProducer(@PathVariable String producerValue){
         return new ResponseEntity<>(carDAO.findCarsByProducer(producerValue), HttpStatus.OK);
     }
-
     @DeleteMapping("/{id}")
     public ResponseEntity<List<Car>> deleteCar(@PathVariable int id) {
         carDAO.deleteById(id);
