@@ -13,6 +13,7 @@ import lombok.*;
 @NoArgsConstructor
 @Getter
 @Setter
+@ToString
 @Entity
 @Table(name = "car_table")
 public class Car {
